@@ -1,0 +1,87 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for a fancy look */
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .about-me {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #ff6b6b;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .center-image {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #ff6b6b;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .btn-primary {
+            background-color: #ff6b6b;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff4848;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="about-me">
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">About Me</h1>
+            <div class="center-image">
+                <img src="images/pic.jpg" alt="Profile Image">
+            </div>
+            <p>Hello, My name is Tina Kobari,
+                I am currently a student at Centennial College, 
+                studying Software Engineering Technician. 
+                This is my third time pursuing higher education.
+                I enjoy creativity. 
+                My hope is to become a UX/UI designer in the future.</p>
+            <p>You can <a href="images/resume.pdf" download class="btn btn-primary" style="padding: 2px;font-size: smaller;">Download Resume (PDF)</a> to learn more about my qualifications and experience.</p>
+        </section>
+    </main>
+</body>
+</html>
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>
